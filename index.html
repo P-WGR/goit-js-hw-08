@@ -5,11 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 8</title>
-    <link rel="stylesheet" href="./css/common.css" />
-  </head>
-  <body>
-    <ul>
-      <li><a href="./task-1.html">Task 1</a></li>
-    </ul>
-  </body>
-</html>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox/dist/basicLightbox.min.css">
+    <style>
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+      }
+    
+      .gallery-item {
+        flex: 1 0 21%;
+        box-sizing: border-box;
+      }
+    
+      .gallery-link {
+        display: block;
+      }
+    
+      .gallery-image {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    </style>
+    </head>
+    
+    <body>
+      <ul class="gallery"></ul>
+    
+      <script src="https://cdn.jsdelivr.net/npm/basiclightbox/dist/basicLightbox.min.js"></script>
+      <script src="gallery.js"></script>
+    </body>
+    
+    </html>
